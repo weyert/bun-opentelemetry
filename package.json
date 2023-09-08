@@ -1,0 +1,25 @@
+{
+  "name": "bun-opentelemetry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "OTEL_SERVICE_NAME=bun-opentelemetry bun run --target node ./telemetry.mjs",
+    "dev:node": "OTEL_SERVICE_NAME=bun-opentelemetry node --experimental-loader=@opentelemetry/instrumentation/hook.mjs  ./telemetry.mjs"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.4.1",
+    "@opentelemetry/resources": "1.15.2",
+    "@opentelemetry/semantic-conventions": "1.15.2",
+    "@opentelemetry/sdk-trace-node": "1.15.2",
+    "@opentelemetry/sdk-trace-base": "1.15.2",
+    "@opentelemetry/sdk-metrics": "1.15.2",
+    "@opentelemetry/exporter-prometheus": "^0.41.2",
+    "@opentelemetry/resource-detector-gcp": "0.29.1",
+    "@opentelemetry/instrumentation": "^0.41.2",
+    "@opentelemetry/instrumentation-http": "^0.41.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
