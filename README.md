@@ -17,7 +17,7 @@ You can run the repro with the following command:
 - Prometheus disabled: `ENABLE_PROMETHEUS=false npm run dev`
 - Prometheus disabled in Node.js: `ENABLE_PROMETHEUS=false npm run dev:node`
 
-## gcp resource detector
+## gcp resource detector (https://github.com/oven-sh/bun/issues/4548)
 
 The Google Cloud Platform resource detector fails due some socket issue:
 
@@ -37,7 +37,7 @@ warn: received unexpected error = Was there a typo in the url or port? code = Fa
 
 If you comment out the gcpDetector on line 23 it will run
 
-## Prometheus Exporter can't be used to runtime error
+## Prometheus Exporter can't be used to runtime error (https://github.com/oven-sh/bun/issues/4333)
 
 If you run the script with the environment variable `ENABLE_PROMETHEUS` to set to `true` the
 application will not run due the following error:
