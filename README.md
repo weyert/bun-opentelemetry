@@ -8,7 +8,14 @@ Uses OpenTelemetry with three exporters:
 
 Also it uses the Google Cloud Platform detector
 
-The following issues exists in the reproduction
+The issues exists in the reproduction are listed below.
+
+You can run the repro with the following command:
+
+- Prometheus enabled: `ENABLE_PROMETHEUS=true npm run dev`
+- Prometheus enabled in Node.js: `ENABLE_PROMETHEUS=true npm run dev:node`
+- Prometheus disabled: `ENABLE_PROMETHEUS=false npm run dev`
+- Prometheus disabled in Node.js: `ENABLE_PROMETHEUS=false npm run dev:node`
 
 ## gcp resource detector
 
